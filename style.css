@@ -1,0 +1,256 @@
+:root{
+    --underweight : rgb(255, 153, 0);
+    --healthy : rgb(0, 255, 0);
+    --overweight : rgb(255, 72, 0);
+    --obese : rgb(255, 0, 0);
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(17, 31, 76);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.container{
+    width: 100%; 
+    max-width: 500px; 
+}
+
+.box{
+    background-color: #12161d;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    padding: 20px; 
+    width: 100%; 
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    height: 110%;
+    width: 110%;
+    left: -5%;
+    top: -5%;
+    background-color: rgba(255, 255, 255, 0.614);
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    z-index: -1;
+}
+
+h1{
+    font-weight: bold;
+    font-size: clamp(24px, 5vw, 35px); 
+    padding: 20px 0;
+    color: #11ca6d;
+    }
+
+.content{
+    padding: 0 15px; 
+}
+
+.input{
+    background-color: #83997c;
+    box-shadow: 0px 0px 95px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 15px 0; 
+    margin: 15px; 
+}
+.input:hover{
+    background-color: #64875a;
+}
+
+.input label{
+    display: block;
+    font-size: clamp(16px, 3vw, 20px); 
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.input input{
+    outline: none;
+    border: 2px solid white;
+    border-bottom: 2px solid rgb(172, 172, 172);
+    width: 70%; 
+    text-align: center;
+    font-size: clamp(16px, 3vw, 20px); 
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+button#calculate{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background: #11ca6d;
+    font-size: clamp(18px, 4vw, 20px); 
+    border-radius: 12px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-bottom: 3px solid #000000;
+    transition: background .2s ease;
+}
+
+button#calculate:hover{
+    background: rgba(48, 255, 86, 0.778);
+    color: rgb(0, 0, 0);
+}
+
+.result{
+    padding: 20px 15px; 
+}
+
+.result p{
+    font-weight: 600;
+    font-size: clamp(18px, 3vw, 20px); 
+    color: #11ca6d;
+    margin-bottom: 10px;
+}
+
+.result #output{
+    font-size:  clamp(30px, 6vw, 35px); 
+    font-weight: bold;
+    color: #11ca6d;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.bmi_result{
+    color: #2b54f9;
+    font-weight: bold;
+    font-size: clamp(18px, 3vw, 20px); 
+}
+
+.bmi_scale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px; 
+    padding: 0 10px; 
+}
+
+.bmi_scale div {
+    padding: 10px 5px; 
+    flex: 1 1 22%;
+    max-width: 25%;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+    box-sizing: border-box;
+    font-size: clamp(10px, 2vw, 12px);
+}
+
+.bmi_scale h5 {
+    font-size: clamp(12px, 2.5vw, 13px);
+    color: rgb(129, 129, 129);
+    margin-bottom: 5px;
+}
+
+.bmi_scale p {
+    font-size: clamp(10px, 2vw, 12px);
+    color: rgb(129, 129, 129);
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px; 
+    }
+
+    .box {
+        padding: 15px; 
+    }
+
+    h1 {
+        padding: 15px 0; 
+    }
+
+    .content {
+        padding: 0 10px; 
+    }
+
+    .input {
+        padding: 10px 0; 
+        margin: 10px; 
+    }
+
+    button#calculate {
+        padding: 10px 0; 
+    }
+
+    .result {
+        padding: 15px 10px; 
+    }
+
+    .bmi_scale {
+        gap: 3px; 
+        padding: 0 5px; 
+    }
+
+    .bmi_scale div {
+        flex: 1 1 45%; 
+        max-width: 48%;
+        padding: 8px 4px; 
+    }
+}
+
+
+@media (max-width: 400px) {
+    body {
+        padding: 10px; 
+    }
+
+    .box {
+        padding: 10px; 
+    }
+
+    h1 {
+        padding: 10px 0; 
+    }
+
+    .content {
+        padding: 0 5px; 
+    }
+
+    .input {
+        padding: 8px 0; 
+        margin: 8px; 
+    }
+
+    button#calculate {
+        padding: 8px 0; 
+    }
+
+    .result {
+        padding: 10px 5px;
+    }
+
+    .bmi_scale {
+        gap: 2px; 
+        padding: 0 2px; 
+    }
+
+    .bmi_scale div {
+        flex: 1 1 90%; 
+        max-width: 95%;
+        padding: 6px 3px; 
+    }
+}
