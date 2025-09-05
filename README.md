@@ -43,9 +43,9 @@ Feel free to use, modify, and share it.
 
 ## Live Demo :
 
-[https://shadanwar2004.github.io/BMI-Calculator/](https://shadanwar2004.github.io/BMI-Calculator/)
+[https://manveer179.github.io/BMI-Calculator/](https://manveer179github.io/BMI-Calculator/)
 
 
 ## Connect with Me
 
-🔗 [LinkedIn](https://www.linkedin.com/in/shadanwar07)
+🔗 [LinkedIn](www.linkedin.com/in/manveer-kaur-088854333)
