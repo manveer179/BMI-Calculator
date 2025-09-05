@@ -48,4 +48,4 @@ Feel free to use, modify, and share it.
 
 ## Connect with Me
 
-🔗 [LinkedIn](www.linkedin.com/in/manveer-kaur-088854333)
+🔗 [LinkedIn](https://www.linkedin.com/in/manveer-kaur-088854333/?originalSubdomain=in)
